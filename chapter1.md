@@ -2,15 +2,18 @@
 
 ### Mac OSX
 
+##### Installation Path
+
+```
+Node.js - /usr/local/bin/node
+NPM     - /usr/local/bin/npm
+```
+
 ##### Option 1
 
 ```
 Option 1
 $ curl "https://nodejs.org/dist/latest/node-${VERSION:-$(wget -qO- https://nodejs.org/dist/latest/ | sed -nE 's|.*>node-(.*)\.pkg</a>.*|\1|p')}.pkg" > "$HOME/Downloads/node-latest.pkg" && sudo installer -store -pkg "$HOME/Downloads/node-latest.pkg" -target "/"
-
-Reference: http://sourabhbajaj.com/mac-setup/Node.js/
-
-Installation location: /usr/local/bin/node and /usr/local/bin/npm
 ```
 
 ##### Option 2
@@ -36,7 +39,20 @@ Install Yarn as Node's package manager. Also install Node.js if not installed al
 $ brew install yarn
 ```
 
-#### 
+##### Option 4 - Installs or updates NVM \(Node Version Manager\)
+
+```
+$ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.7/install.sh | bash
+$ nvm install 8              # install node 8
+$ nvm alias default 8        # to make node 8 the default
+```
+
+#### Reference
+
+```
+Reference: http://sourabhbajaj.com/mac-setup/Node.js/
+
+```
 
 
 
