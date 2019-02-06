@@ -9,6 +9,13 @@ express.js
 nest.js
 koa.js
 hapi.js
+sail.js
+partial.js
+total.js
+fastify.js
+
+source:
+https://codebrahma.com/9-best-node-js-frameworks-developers/
 ```
 
 #### Official Documentation
