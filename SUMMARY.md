@@ -4,4 +4,5 @@
 * [Installation](chapter1.md)
 * [Package Manager](package-manager.md)
 * [Cheatsheet](cheatsheet.md)
+* [Process Manager](process-manager.md)
 
