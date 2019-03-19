@@ -20,7 +20,6 @@ $ NODE_DEBUG="http,fs" node index.js
 $ VAL1=10 node index.js       # Sets a variable key-value in process.env
     $ export VAL1=10          # works same as above, just two steps
     $ node index.js
-
 ```
 
 #### NPM
@@ -42,6 +41,26 @@ time in setTimeout is a minimum time, since operation can be blocked by a blocki
 console.log == process.stdout.write
 
 process.on('exit', () => {})
+```
+
+### Exceptions
+
+```
+When installing packages globally, if you run into access issues, use sudo
+$ sudo npm install -g pm2
+
+If you still get access issue, you probably mixed permissions at one point.
+Ideal solution is to remove the folder and install it manually.
+
+OR
+
+If you still get access issue, change permission for the node_modules (not preferred)
+$ sudo chmod 777 node_modules
+
+OR
+
+If you still get access issue, use --unsafe-perm flag (least preferred)
+$ sudo npm install -g pm2 --unsafe-perm flag
 ```
 
 
