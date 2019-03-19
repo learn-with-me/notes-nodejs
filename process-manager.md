@@ -22,11 +22,13 @@ $ pm2 start process_prod.json  # Start process(es) via process JSON file
 $ pm2 ls                       # Show a list of all applications
 $ pm2 stop <app>               # Stops a specific application
 $ pm2 start <app>              # Starts a specific application
+$ pm2 start <app> --watch      # Starts a specific application with watch enabled
 $ pm2 delete <app>             # stop and delete a process from the list
 $ pm2 kill                     # Kills all running applications
-$ pm2 restart                  # Restarts all running applications
+$ pm2 restart                  # Restarts all running applications. App is unavailable for a short time
 $ pm2 reload                   # Reloads the app configuration (handy when you modify env variables)
 $ pm2 <app> scale N            # Scales the application to N number of instances (up or down)
+$ pm2 serve <path> <port>      # serve static files (like a frontend app) over HTTP
 ```
 
 ##### Cheatsheet - Stats
@@ -89,7 +91,6 @@ $ pm2 unstartup    # Remove Startup Script
     $ pm2 start --only <app_name>    # Use ecosystem file only on a specific application
 
     $ pm2 restart ecosystem.config.js --update-env      # force refresh the environment
-
 
 #### References
 
