@@ -16,6 +16,9 @@ $ nvm alias default 8        # to make node 8 the default
 ##### Cheatsheet
 
 ```
+Clean install
+$ npm ci
+
 Save config in .npmrc
 $ npm config set save=true
 $ npm config set save-exact=true
@@ -49,7 +52,6 @@ $ brew install yarn
 https://www.npmjs.com/package/memwatch-next
 https://www.npmjs.com/package/heapdump
 https://www.npmjs.com/package/autocannon
-
 ```
 
 
